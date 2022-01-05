@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{4045F807-143A-46B2-A5C6-564436538DD1}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Projem</RootNamespace>
+    <AssemblyName>Projem</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Fadmin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fadmin.Designer.cs">
+      <DependentUpon>Fadmin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fdefault.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fdefault.Designer.cs">
+      <DependentUpon>Fdefault.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Femanetkitapiade.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Femanetkitapiade.Designer.cs">
+      <DependentUpon>Femanetkitapiade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Femanetkitaplisteleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Femanetkitaplisteleme.Designer.cs">
+      <DependentUpon>Femanetkitaplisteleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fgrafik.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fgrafik.Designer.cs">
+      <DependentUpon>Fgrafik.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fkayıtscreen.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fkayıtscreen.Designer.cs">
+      <DependentUpon>Fkayıtscreen.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fkgiris.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fkgiris.Designer.cs">
+      <DependentUpon>Fkgiris.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fkitapekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fkitapekle.Designer.cs">
+      <DependentUpon>Fkitapekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fkitaplistele.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fkitaplistele.Designer.cs">
+      <DependentUpon>Fkitaplistele.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Femanetislem.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Femanetislem.Designer.cs">
+      <DependentUpon>Femanetislem.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Fsıralama.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Fsıralama.Designer.cs">
+      <DependentUpon>Fsıralama.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Füyeekle.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Füyeekle.Designer.cs">
+      <DependentUpon>Füyeekle.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Füyelisteleme.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Füyelisteleme.Designer.cs">
+      <DependentUpon>Füyelisteleme.cs</DependentUpon>
+    </Compile>
+    <Compile Include="KullanıcıForm.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Fadmin.resx">
+      <DependentUpon>Fadmin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fdefault.resx">
+      <DependentUpon>Fdefault.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Femanetkitapiade.resx">
+      <DependentUpon>Femanetkitapiade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Femanetkitaplisteleme.resx">
+      <DependentUpon>Femanetkitaplisteleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fgrafik.resx">
+      <DependentUpon>Fgrafik.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fkayıtscreen.resx">
+      <DependentUpon>Fkayıtscreen.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fkgiris.resx">
+      <DependentUpon>Fkgiris.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fkitapekle.resx">
+      <DependentUpon>Fkitapekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fkitaplistele.resx">
+      <DependentUpon>Fkitaplistele.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Femanetislem.resx">
+      <DependentUpon>Femanetislem.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Fsıralama.resx">
+      <DependentUpon>Fsıralama.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Füyeekle.resx">
+      <DependentUpon>Füyeekle.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Füyelisteleme.resx">
+      <DependentUpon>Füyelisteleme.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\x.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\4.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kgiriş.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
